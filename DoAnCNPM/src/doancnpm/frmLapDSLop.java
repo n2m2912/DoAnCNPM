@@ -36,6 +36,8 @@ public class frmLapDSLop extends javax.swing.JInternalFrame {
         jLabel3 = new javax.swing.JLabel();
         tfss = new javax.swing.JTextField();
 
+        setClosable(true);
+
         btlap.setText("Lập");
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(

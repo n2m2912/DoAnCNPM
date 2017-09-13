@@ -36,6 +36,8 @@ public class frmDanhSachHS extends javax.swing.JInternalFrame {
         jTable1 = new javax.swing.JTable();
         jLabel2 = new javax.swing.JLabel();
 
+        setClosable(true);
+
         jLabel3.setText("Họ Tên:");
 
         jLabel4.setText("Lớp:");

@@ -34,6 +34,8 @@ public class frmBaoCaoHK extends javax.swing.JInternalFrame {
         jTable1 = new javax.swing.JTable();
         jButton1 = new javax.swing.JButton();
 
+        setClosable(true);
+
         jLabel1.setText("Báo Cáo Tổng Kết Học Kỳ");
 
         jLabel2.setText("Học kỳ:");

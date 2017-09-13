@@ -41,6 +41,8 @@ public class frmThemHS extends javax.swing.JInternalFrame {
         tfdc = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
 
+        setClosable(true);
+
         btnhap.setText("Nhập");
 
         jLabel2.setText("Họ và tên:");

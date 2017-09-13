@@ -37,6 +37,8 @@ public class frmBaoCaoMon extends javax.swing.JInternalFrame {
         jTextField1 = new javax.swing.JTextField();
         jComboBox1 = new javax.swing.JComboBox<>();
 
+        setClosable(true);
+
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Toán", "Lý", "Hóa", "Sinh", "Sử", "Địa", "Văn", "Đạo Đức", "Thể Dục" }));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(

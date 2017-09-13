@@ -43,6 +43,8 @@ public class frmBangDiem extends javax.swing.JInternalFrame {
         jTextField4 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
 
+        setClosable(true);
+
         jButton1.setText("Nhập");
 
         jLabel2.setText("Họ Tên:");

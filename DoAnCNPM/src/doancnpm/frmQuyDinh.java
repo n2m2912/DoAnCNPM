@@ -40,6 +40,8 @@ public class frmQuyDinh extends javax.swing.JInternalFrame {
         jTextField2 = new javax.swing.JTextField();
         jTextField3 = new javax.swing.JTextField();
 
+        setClosable(true);
+
         jLabel6.setText("Tối thiểu:");
 
         jLabel7.setText("Tối Đa:");

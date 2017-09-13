@@ -36,6 +36,8 @@ public class frmDSLop extends javax.swing.JInternalFrame {
         jButton1 = new javax.swing.JButton();
         jTextField2 = new javax.swing.JTextField();
 
+        setClosable(true);
+
         jButton2.setText("Xóa");
 
         jLabel2.setText("Chỉnh sửa danh sách lớp:");
