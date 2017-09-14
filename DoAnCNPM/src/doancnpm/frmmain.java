@@ -35,6 +35,7 @@ public class frmmain extends javax.swing.JFrame {
         mnbdm = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
         mnlds = new javax.swing.JMenuItem();
+        mndsl = new javax.swing.JMenuItem();
         jMenu1 = new javax.swing.JMenu();
         mntkm = new javax.swing.JMenuItem();
         mntkhk = new javax.swing.JMenuItem();
@@ -47,11 +48,11 @@ public class frmmain extends javax.swing.JFrame {
         jDesktopPane1.setLayout(jDesktopPane1Layout);
         jDesktopPane1Layout.setHorizontalGroup(
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGap(0, 600, Short.MAX_VALUE)
         );
         jDesktopPane1Layout.setVerticalGroup(
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 279, Short.MAX_VALUE)
+            .addGap(0, 441, Short.MAX_VALUE)
         );
 
         jMenu12.setText("QLY HS");
@@ -65,9 +66,19 @@ public class frmmain extends javax.swing.JFrame {
         jMenu12.add(mnths);
 
         mntc.setText("Tra cứu học sinh");
+        mntc.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mntcActionPerformed(evt);
+            }
+        });
         jMenu12.add(mntc);
 
         mnbdm.setText("Nhập bảng điểm môn");
+        mnbdm.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnbdmActionPerformed(evt);
+            }
+        });
         jMenu12.add(mnbdm);
 
         jMenuBar1.add(jMenu12);
@@ -75,16 +86,39 @@ public class frmmain extends javax.swing.JFrame {
         jMenu3.setText("QLY Lớp");
 
         mnlds.setText("Lập danh sách lớp");
+        mnlds.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnldsActionPerformed(evt);
+            }
+        });
         jMenu3.add(mnlds);
+
+        mndsl.setText("Danh sách lớp");
+        mndsl.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mndslActionPerformed(evt);
+            }
+        });
+        jMenu3.add(mndsl);
 
         jMenuBar1.add(jMenu3);
 
         jMenu1.setText("Lập báo cáo");
 
         mntkm.setText("Tổng kết môn");
+        mntkm.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mntkmActionPerformed(evt);
+            }
+        });
         jMenu1.add(mntkm);
 
         mntkhk.setText("Tổng kết học kỳ");
+        mntkhk.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mntkhkActionPerformed(evt);
+            }
+        });
         jMenu1.add(mntkhk);
 
         jMenuBar1.add(jMenu1);
@@ -92,6 +126,11 @@ public class frmmain extends javax.swing.JFrame {
         jMenu5.setText("Quy Định");
 
         mnqd.setText("Thay đổi qui định");
+        mnqd.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnqdActionPerformed(evt);
+            }
+        });
         jMenu5.add(mnqd);
 
         jMenuBar1.add(jMenu5);
@@ -102,11 +141,15 @@ public class frmmain extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jDesktopPane1)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jDesktopPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jDesktopPane1)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jDesktopPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
@@ -118,6 +161,55 @@ public class frmmain extends javax.swing.JFrame {
         jDesktopPane1.add(ths);
         ths.setVisible(true);
     }//GEN-LAST:event_mnthsActionPerformed
+
+    private void mntcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mntcActionPerformed
+        // TODO add your handling code here:
+        frmDanhSachHS dshs = new frmDanhSachHS();
+        jDesktopPane1.add(dshs);
+        dshs.setVisible(true);
+    }//GEN-LAST:event_mntcActionPerformed
+
+    private void mnbdmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnbdmActionPerformed
+        // TODO add your handling code here:
+        frmBangDiem bd = new frmBangDiem();
+        jDesktopPane1.add(bd);
+        bd.setVisible(true);
+    }//GEN-LAST:event_mnbdmActionPerformed
+
+    private void mndslActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mndslActionPerformed
+        // TODO add your handling code here:
+        frmDSLop dsl = new frmDSLop();
+        jDesktopPane1.add(dsl);
+        dsl.setVisible(true);
+    }//GEN-LAST:event_mndslActionPerformed
+
+    private void mnldsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnldsActionPerformed
+        // TODO add your handling code here:
+        frmLapDSLop lds = new frmLapDSLop();
+        jDesktopPane1.add(lds);
+        lds.setVisible(true);
+    }//GEN-LAST:event_mnldsActionPerformed
+
+    private void mntkmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mntkmActionPerformed
+        // TODO add your handling code here:
+        frmBaoCaoMon bcm = new frmBaoCaoMon();
+        jDesktopPane1.add(bcm);
+        bcm.setVisible(true);
+    }//GEN-LAST:event_mntkmActionPerformed
+
+    private void mntkhkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mntkhkActionPerformed
+        // TODO add your handling code here:
+        frmBaoCaoHK bchk = new frmBaoCaoHK();
+        jDesktopPane1.add(bchk);
+        bchk.setVisible(true);
+    }//GEN-LAST:event_mntkhkActionPerformed
+
+    private void mnqdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnqdActionPerformed
+        // TODO add your handling code here:
+        frmQuyDinh qd = new frmQuyDinh();
+        jDesktopPane1.add(qd);
+        qd.setVisible(true);
+    }//GEN-LAST:event_mnqdActionPerformed
 
     /**
      * @param args the command line arguments
@@ -162,6 +254,7 @@ public class frmmain extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu5;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem mnbdm;
+    private javax.swing.JMenuItem mndsl;
     private javax.swing.JMenuItem mnlds;
     private javax.swing.JMenuItem mnqd;
     private javax.swing.JMenuItem mntc;
