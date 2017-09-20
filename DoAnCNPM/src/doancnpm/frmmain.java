@@ -4,7 +4,9 @@
  * and open the template in the editor.
  */
 package doancnpm;
-
+import java.awt.Image;
+import java.awt.Graphics;
+import javax.swing.ImageIcon;
 /**
  *
  * @author manng
@@ -27,7 +29,13 @@ public class frmmain extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jDesktopPane1 = new javax.swing.JDesktopPane();
+        ImageIcon icon = new ImageIcon(getClass().getResource("/doancnpm/pc ok.png"));
+        Image image = icon.getImage();
+        jDesktopPane1 = new javax.swing.JDesktopPane(){
+            public void paintComponent(Graphics g){
+                g.drawImage(image,0,0,getWidth(),getHeight(),this);
+            }
+        };
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu12 = new javax.swing.JMenu();
         mnths = new javax.swing.JMenuItem();
@@ -41,8 +49,11 @@ public class frmmain extends javax.swing.JFrame {
         mntkhk = new javax.swing.JMenuItem();
         jMenu5 = new javax.swing.JMenu();
         mnqd = new javax.swing.JMenuItem();
+        jMenu2 = new javax.swing.JMenu();
+        mntt = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Quản lý học sinh");
 
         javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
         jDesktopPane1.setLayout(jDesktopPane1Layout);
@@ -135,19 +146,31 @@ public class frmmain extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu5);
 
+        jMenu2.setText("About");
+
+        mntt.setText("Thông tin nhóm phát triển");
+        mntt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnttActionPerformed(evt);
+            }
+        });
+        jMenu2.add(mntt);
+
+        jMenuBar1.add(jMenu2);
+
         setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addComponent(jDesktopPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addComponent(jDesktopPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
@@ -211,6 +234,13 @@ public class frmmain extends javax.swing.JFrame {
         qd.setVisible(true);
     }//GEN-LAST:event_mnqdActionPerformed
 
+    private void mnttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnttActionPerformed
+        // TODO add your handling code here:
+        frmAbout ab = new frmAbout();
+        jDesktopPane1.add(ab);
+        ab.setVisible(true);
+    }//GEN-LAST:event_mnttActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -250,6 +280,7 @@ public class frmmain extends javax.swing.JFrame {
     private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu12;
+    private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu5;
     private javax.swing.JMenuBar jMenuBar1;
@@ -261,5 +292,6 @@ public class frmmain extends javax.swing.JFrame {
     private javax.swing.JMenuItem mnths;
     private javax.swing.JMenuItem mntkhk;
     private javax.swing.JMenuItem mntkm;
+    private javax.swing.JMenuItem mntt;
     // End of variables declaration//GEN-END:variables
 }
