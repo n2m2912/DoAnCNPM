@@ -4,9 +4,6 @@
  * and open the template in the editor.
  */
 package doancnpm;
-import java.awt.Image;
-import java.awt.Graphics;
-import javax.swing.ImageIcon;
 
 /**
  *
@@ -30,13 +27,7 @@ public class frmmain extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        ImageIcon icon = new ImageIcon(getClass().getResource("/doancnpm/pc ok.png"));
-        Image image = icon.getImage();
-        jDesktopPane1 = new javax.swing.JDesktopPane(){
-            public void paintComponent(Graphics g){
-                g.drawImage(image,0,0,getWidth(),getHeight(),this);
-            }
-        };
+        jDesktopPane1 = new javax.swing.JDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu12 = new javax.swing.JMenu();
         mnths = new javax.swing.JMenuItem();
@@ -50,33 +41,23 @@ public class frmmain extends javax.swing.JFrame {
         mntkhk = new javax.swing.JMenuItem();
         jMenu5 = new javax.swing.JMenu();
         mnqd = new javax.swing.JMenuItem();
-        JMenu6 = new javax.swing.JMenu();
-        mntt = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("QUAN LY HOC SINH");
-
-        jDesktopPane1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
         jDesktopPane1.setLayout(jDesktopPane1Layout);
         jDesktopPane1Layout.setHorizontalGroup(
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 496, Short.MAX_VALUE)
+            .addGap(0, 600, Short.MAX_VALUE)
         );
         jDesktopPane1Layout.setVerticalGroup(
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 298, Short.MAX_VALUE)
+            .addGap(0, 441, Short.MAX_VALUE)
         );
-
-        getContentPane().add(jDesktopPane1, java.awt.BorderLayout.CENTER);
-
-        jMenuBar1.setDoubleBuffered(true);
 
         jMenu12.setText("QLY HS");
 
         mnths.setText("Thêm học sinh");
-        mnths.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         mnths.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mnthsActionPerformed(evt);
@@ -154,19 +135,22 @@ public class frmmain extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu5);
 
-        JMenu6.setText("About");
-
-        mntt.setText("Thông tin nhóm phát triển");
-        mntt.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mnttActionPerformed(evt);
-            }
-        });
-        JMenu6.add(mntt);
-
-        jMenuBar1.add(JMenu6);
-
         setJMenuBar(jMenuBar1);
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jDesktopPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jDesktopPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -227,17 +211,9 @@ public class frmmain extends javax.swing.JFrame {
         qd.setVisible(true);
     }//GEN-LAST:event_mnqdActionPerformed
 
-    private void mnttActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnttActionPerformed
-        // TODO add your handling code here:
-        frmAbout ab = new frmAbout();
-        jDesktopPane1.add(ab);
-        ab.setVisible(true);
-    }//GEN-LAST:event_mnttActionPerformed
-
     /**
      * @param args the command line arguments
      */
-    // public  static strConnection = "";
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -263,9 +239,6 @@ public class frmmain extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-       
-
-        
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new frmmain().setVisible(true);
@@ -274,7 +247,6 @@ public class frmmain extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenu JMenu6;
     private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu12;
@@ -289,6 +261,5 @@ public class frmmain extends javax.swing.JFrame {
     private javax.swing.JMenuItem mnths;
     private javax.swing.JMenuItem mntkhk;
     private javax.swing.JMenuItem mntkm;
-    private javax.swing.JMenuItem mntt;
     // End of variables declaration//GEN-END:variables
 }
