@@ -75,6 +75,7 @@ public class frmmain extends javax.swing.JFrame {
         jMenu12 = new javax.swing.JMenu();
         mnths = new javax.swing.JMenuItem();
         mntc = new javax.swing.JMenuItem();
+        jMenu11 = new javax.swing.JMenu();
         jMenu5 = new javax.swing.JMenu();
         mnqd = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
@@ -105,13 +106,11 @@ public class frmmain extends javax.swing.JFrame {
         jPanel2.setForeground(new java.awt.Color(255, 255, 255));
 
         jLabel3.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        jLabel3.setIcon(new javax.swing.ImageIcon("D:\\Cong_Nghe_Pham_Mem\\Do_An\\Photo for Design Form\\Lock.png")); // NOI18N
         jLabel3.setText("UserName");
 
         jTextField1.setText(" ");
 
         jLabel4.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
-        jLabel4.setIcon(new javax.swing.ImageIcon("D:\\Cong_Nghe_Pham_Mem\\Do_An\\Photo for Design Form\\Key.png")); // NOI18N
         jLabel4.setText("PassWord");
 
         jButton1.setFont(new java.awt.Font("Dialog", 3, 14)); // NOI18N
@@ -157,7 +156,7 @@ public class frmmain extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
                     .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 7, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jToggleButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -213,13 +212,11 @@ public class frmmain extends javax.swing.JFrame {
         BtnNhapDiem.setBackground(new java.awt.Color(204, 204, 255));
         BtnNhapDiem.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         BtnNhapDiem.setForeground(new java.awt.Color(0, 153, 153));
-        BtnNhapDiem.setIcon(new javax.swing.ImageIcon("D:\\Cong_Nghe_Pham_Mem\\Do_An\\Photo for Design Form\\Hourglass.png")); // NOI18N
         BtnNhapDiem.setText("TỔNG KẾT");
 
         btnThemHS.setBackground(new java.awt.Color(204, 204, 255));
         btnThemHS.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         btnThemHS.setForeground(new java.awt.Color(0, 153, 153));
-        btnThemHS.setIcon(new javax.swing.ImageIcon("D:\\Cong_Nghe_Pham_Mem\\Do_An\\Photo for Design Form\\Shield 16x16.png")); // NOI18N
         btnThemHS.setText("TIẾP NHẬN ");
         btnThemHS.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -230,19 +227,16 @@ public class frmmain extends javax.swing.JFrame {
         BtnNhapDiem2.setBackground(new java.awt.Color(204, 204, 255));
         BtnNhapDiem2.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         BtnNhapDiem2.setForeground(new java.awt.Color(0, 153, 153));
-        BtnNhapDiem2.setIcon(new javax.swing.ImageIcon("D:\\Cong_Nghe_Pham_Mem\\Do_An\\Photo for Design Form\\Create.png")); // NOI18N
         BtnNhapDiem2.setText("NHẬP ĐIỂM");
 
         BtnNhapDiem1.setBackground(new java.awt.Color(204, 204, 255));
         BtnNhapDiem1.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         BtnNhapDiem1.setForeground(new java.awt.Color(0, 153, 153));
-        BtnNhapDiem1.setIcon(new javax.swing.ImageIcon("D:\\Cong_Nghe_Pham_Mem\\Do_An\\Photo for Design Form\\Danger.png")); // NOI18N
         BtnNhapDiem1.setText("QUY ĐỊNH");
 
         BtnNhapDiem3.setBackground(new java.awt.Color(204, 204, 255));
         BtnNhapDiem3.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         BtnNhapDiem3.setForeground(new java.awt.Color(0, 153, 153));
-        BtnNhapDiem3.setIcon(new javax.swing.ImageIcon("D:\\Cong_Nghe_Pham_Mem\\Do_An\\Photo for Design Form\\View.png")); // NOI18N
         BtnNhapDiem3.setText("TÌM KIẾM");
         BtnNhapDiem3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -254,7 +248,6 @@ public class frmmain extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(255, 0, 0));
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/a_181.jpg"))); // NOI18N
 
-        jMenu4.setIcon(new javax.swing.ImageIcon("D:\\Cong_Nghe_Pham_Mem\\Do_An\\Photo for Design Form\\User group.png")); // NOI18N
         jMenu4.setText("Quản Trị Viên");
         jMenu4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -267,7 +260,6 @@ public class frmmain extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu4);
 
-        jMenu3.setIcon(new javax.swing.ImageIcon("D:\\Cong_Nghe_Pham_Mem\\Do_An\\Photo for Design Form\\Computer 16x16.png")); // NOI18N
         jMenu3.setText("Hệ Thống");
 
         jMenuItem6.setText("QL_Môn Học");
@@ -302,10 +294,8 @@ public class frmmain extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu3);
 
-        jMenu12.setIcon(new javax.swing.ImageIcon("D:\\Cong_Nghe_Pham_Mem\\Do_An\\Photo for Design Form\\Person.png")); // NOI18N
         jMenu12.setText("Quản Lý Học Sinh");
 
-        mnths.setIcon(new javax.swing.ImageIcon("D:\\Cong_Nghe_Pham_Mem\\Do_An\\Photo for Design Form\\Create.png")); // NOI18N
         mnths.setText("Tiếp Nhận Học Sinh");
         mnths.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -314,7 +304,6 @@ public class frmmain extends javax.swing.JFrame {
         });
         jMenu12.add(mnths);
 
-        mntc.setIcon(new javax.swing.ImageIcon("D:\\Cong_Nghe_Pham_Mem\\Do_An\\Photo for Design Form\\View.png")); // NOI18N
         mntc.setText("Tra Cứu Hồ Sơ HS ");
         mntc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -324,6 +313,9 @@ public class frmmain extends javax.swing.JFrame {
         jMenu12.add(mntc);
 
         jMenuBar1.add(jMenu12);
+
+        jMenu11.setText("Quản Lý Lớp Học");
+        jMenuBar1.add(jMenu11);
 
         jMenu5.setText("Quản Lý Điểm");
 
@@ -360,7 +352,6 @@ public class frmmain extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu1);
 
-        jMenu13.setIcon(new javax.swing.ImageIcon("D:\\Cong_Nghe_Pham_Mem\\Do_An\\Photo for Design Form\\Pinion.png")); // NOI18N
         jMenu13.setText("Quy Định");
 
         jMenuItemThayDoiQuyDinh.setText("Thay Đổi Quy Định");
@@ -579,6 +570,7 @@ public class frmmain extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu10;
+    private javax.swing.JMenu jMenu11;
     private javax.swing.JMenu jMenu12;
     private javax.swing.JMenu jMenu13;
     private javax.swing.JMenu jMenu2;

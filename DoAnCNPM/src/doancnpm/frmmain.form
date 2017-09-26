@@ -42,9 +42,6 @@
       <SubComponents>
         <Menu class="javax.swing.JMenu" name="jMenu4">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="D:\Cong_Nghe_Pham_Mem\Do_An\Photo for Design Form\User group.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Qu&#x1ea3;n Tr&#x1ecb; Vi&#xea;n"/>
           </Properties>
           <Events>
@@ -60,9 +57,6 @@
         </Menu>
         <Menu class="javax.swing.JMenu" name="jMenu3">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="D:\Cong_Nghe_Pham_Mem\Do_An\Photo for Design Form\Computer 16x16.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="H&#x1ec7; Th&#x1ed1;ng"/>
           </Properties>
           <SubComponents>
@@ -104,17 +98,11 @@
         </Menu>
         <Menu class="javax.swing.JMenu" name="jMenu12">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="D:\Cong_Nghe_Pham_Mem\Do_An\Photo for Design Form\Person.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Qu&#x1ea3;n L&#xfd; H&#x1ecd;c Sinh"/>
           </Properties>
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="mnths">
               <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="D:\Cong_Nghe_Pham_Mem\Do_An\Photo for Design Form\Create.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Ti&#x1ebf;p Nh&#x1ead;n H&#x1ecd;c Sinh"/>
               </Properties>
               <Events>
@@ -123,9 +111,6 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="mntc">
               <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="D:\Cong_Nghe_Pham_Mem\Do_An\Photo for Design Form\View.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Tra C&#x1ee9;u H&#x1ed3; S&#x1a1; HS "/>
               </Properties>
               <Events>
@@ -133,6 +118,11 @@
               </Events>
             </MenuItem>
           </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="jMenu11">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Qu&#x1ea3;n L&#xfd; L&#x1edb;p H&#x1ecd;c"/>
+          </Properties>
         </Menu>
         <Menu class="javax.swing.JMenu" name="jMenu5">
           <Properties>
@@ -179,9 +169,6 @@
         </Menu>
         <Menu class="javax.swing.JMenu" name="jMenu13">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="D:\Cong_Nghe_Pham_Mem\Do_An\Photo for Design Form\Pinion.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Quy &#x110;&#x1ecb;nh"/>
           </Properties>
           <SubComponents>
@@ -344,7 +331,7 @@
                           <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jPasswordField1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="7" max="32767" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jButton1" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
                           <Component id="jToggleButton1" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
@@ -360,9 +347,6 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Dialog" size="14" style="0"/>
                 </Property>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="D:\Cong_Nghe_Pham_Mem\Do_An\Photo for Design Form\Lock.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="UserName"/>
               </Properties>
             </Component>
@@ -375,9 +359,6 @@
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Dialog" size="14" style="0"/>
-                </Property>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="D:\Cong_Nghe_Pham_Mem\Do_An\Photo for Design Form\Key.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="PassWord"/>
               </Properties>
@@ -531,9 +512,6 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="99" green="99" red="0" type="rgb"/>
         </Property>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="D:\Cong_Nghe_Pham_Mem\Do_An\Photo for Design Form\Hourglass.png"/>
-        </Property>
         <Property name="text" type="java.lang.String" value="T&#x1ed4;NG K&#x1ebe;T"/>
       </Properties>
     </Component>
@@ -547,9 +525,6 @@
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="99" green="99" red="0" type="rgb"/>
-        </Property>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="D:\Cong_Nghe_Pham_Mem\Do_An\Photo for Design Form\Shield 16x16.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="TI&#x1ebe;P NH&#x1eac;N "/>
       </Properties>
@@ -568,9 +543,6 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="99" green="99" red="0" type="rgb"/>
         </Property>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="D:\Cong_Nghe_Pham_Mem\Do_An\Photo for Design Form\Create.png"/>
-        </Property>
         <Property name="text" type="java.lang.String" value="NH&#x1eac;P &#x110;I&#x1ec2;M"/>
       </Properties>
     </Component>
@@ -585,9 +557,6 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="99" green="99" red="0" type="rgb"/>
         </Property>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="D:\Cong_Nghe_Pham_Mem\Do_An\Photo for Design Form\Danger.png"/>
-        </Property>
         <Property name="text" type="java.lang.String" value="QUY &#x110;&#x1eca;NH"/>
       </Properties>
     </Component>
@@ -601,9 +570,6 @@
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="99" green="99" red="0" type="rgb"/>
-        </Property>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="D:\Cong_Nghe_Pham_Mem\Do_An\Photo for Design Form\View.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="T&#xcc;M KI&#x1ebe;M"/>
       </Properties>
