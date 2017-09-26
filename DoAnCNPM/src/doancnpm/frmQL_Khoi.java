@@ -9,12 +9,12 @@ package doancnpm;
  *
  * @author manng
  */
-public class frmHelp extends javax.swing.JInternalFrame {
+public class frmQL_Khoi extends javax.swing.JInternalFrame {
 
     /**
-     * Creates new form frmHelp
+     * Creates new form frmQL_Khoi
      */
-    public frmHelp() {
+    public frmQL_Khoi() {
         initComponents();
     }
 
@@ -28,8 +28,6 @@ public class frmHelp extends javax.swing.JInternalFrame {
     private void initComponents() {
 
         setClosable(true);
-        setResizable(true);
-        setTitle("Help");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

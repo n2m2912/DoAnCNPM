@@ -35,6 +35,7 @@ public class frmmain extends javax.swing.JFrame {
         jMenuBar3 = new javax.swing.JMenuBar();
         jMenu8 = new javax.swing.JMenu();
         jMenu9 = new javax.swing.JMenu();
+        jMenuItem7 = new javax.swing.JMenuItem();
         ImageIcon icon = new ImageIcon(getClass().getResource("../image/nen.jpg"));
         Image image = icon.getImage();
         jDesktopPane1 = new javax.swing.JDesktopPane(){
@@ -67,19 +68,19 @@ public class frmmain extends javax.swing.JFrame {
         jMenu4 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
-        jMenuItem6 = new javax.swing.JMenuItem();
-        QL_LopHoc = new javax.swing.JMenuItem();
-        jMenuItem5 = new javax.swing.JMenuItem();
-        mnlds = new javax.swing.JMenuItem();
-        QL_NamHoc = new javax.swing.JMenuItem();
+        mnQLM = new javax.swing.JMenuItem();
+        mnQLL = new javax.swing.JMenuItem();
+        mnQLHK = new javax.swing.JMenuItem();
+        mnQLK = new javax.swing.JMenuItem();
+        mnQLNH = new javax.swing.JMenuItem();
         jMenu12 = new javax.swing.JMenu();
         mnths = new javax.swing.JMenuItem();
         mntc = new javax.swing.JMenuItem();
         jMenu11 = new javax.swing.JMenu();
-        jMenuItem3 = new javax.swing.JMenuItem();
+        mnSXL = new javax.swing.JMenuItem();
         jMenu5 = new javax.swing.JMenu();
         mnqd = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
+        mnTCD = new javax.swing.JMenuItem();
         jMenu1 = new javax.swing.JMenu();
         mntkm = new javax.swing.JMenuItem();
         mntkhk = new javax.swing.JMenuItem();
@@ -87,7 +88,8 @@ public class frmmain extends javax.swing.JFrame {
         jMenuItemThayDoiQuyDinh = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         mntt = new javax.swing.JMenuItem();
-        jMenu10 = new javax.swing.JMenu();
+        jMenu14 = new javax.swing.JMenu();
+        mnHelp = new javax.swing.JMenuItem();
 
         jMenu6.setText("File");
         jMenuBar2.add(jMenu6);
@@ -101,8 +103,11 @@ public class frmmain extends javax.swing.JFrame {
         jMenu9.setText("Edit");
         jMenuBar3.add(jMenu9);
 
+        jMenuItem7.setText("jMenuItem7");
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Quản lý học sinh");
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         jPanel2.setForeground(new java.awt.Color(255, 255, 255));
 
@@ -263,35 +268,40 @@ public class frmmain extends javax.swing.JFrame {
 
         jMenu3.setText("Hệ Thống");
 
-        jMenuItem6.setText("QL_Môn Học");
-        jMenu3.add(jMenuItem6);
+        mnQLM.setText("QL_Môn Học");
+        jMenu3.add(mnQLM);
 
-        QL_LopHoc.setText("QL_Lớp");
-        QL_LopHoc.addActionListener(new java.awt.event.ActionListener() {
+        mnQLL.setText("QL_Lớp");
+        mnQLL.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                QL_LopHocActionPerformed(evt);
+                mnQLLActionPerformed(evt);
             }
         });
-        jMenu3.add(QL_LopHoc);
+        jMenu3.add(mnQLL);
 
-        jMenuItem5.setText("QL_Học Kỳ");
-        jMenu3.add(jMenuItem5);
-
-        mnlds.setText("QL_ Khối ");
-        mnlds.addActionListener(new java.awt.event.ActionListener() {
+        mnQLHK.setText("QL_Học Kỳ");
+        mnQLHK.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mnldsActionPerformed(evt);
+                mnQLHKActionPerformed(evt);
             }
         });
-        jMenu3.add(mnlds);
+        jMenu3.add(mnQLHK);
 
-        QL_NamHoc.setText("QL_Năm Học");
-        QL_NamHoc.addActionListener(new java.awt.event.ActionListener() {
+        mnQLK.setText("QL_ Khối ");
+        mnQLK.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                QL_NamHocActionPerformed(evt);
+                mnQLKActionPerformed(evt);
             }
         });
-        jMenu3.add(QL_NamHoc);
+        jMenu3.add(mnQLK);
+
+        mnQLNH.setText("QL_Năm Học");
+        mnQLNH.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnQLNHActionPerformed(evt);
+            }
+        });
+        jMenu3.add(mnQLNH);
 
         jMenuBar1.add(jMenu3);
 
@@ -317,8 +327,13 @@ public class frmmain extends javax.swing.JFrame {
 
         jMenu11.setText("Quản Lý Lớp Học");
 
-        jMenuItem3.setText("QLYLop");
-        jMenu11.add(jMenuItem3);
+        mnSXL.setText("QLYLop");
+        mnSXL.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnSXLActionPerformed(evt);
+            }
+        });
+        jMenu11.add(mnSXL);
 
         jMenuBar1.add(jMenu11);
 
@@ -332,8 +347,8 @@ public class frmmain extends javax.swing.JFrame {
         });
         jMenu5.add(mnqd);
 
-        jMenuItem2.setText("Tra Cứu");
-        jMenu5.add(jMenuItem2);
+        mnTCD.setText("Tra Cứu");
+        jMenu5.add(mnTCD);
 
         jMenuBar1.add(jMenu5);
 
@@ -381,13 +396,17 @@ public class frmmain extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu2);
 
-        jMenu10.setText("Help");
-        jMenu10.addActionListener(new java.awt.event.ActionListener() {
+        jMenu14.setText("Help");
+
+        mnHelp.setText("Help");
+        mnHelp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenu10ActionPerformed(evt);
+                mnHelpActionPerformed(evt);
             }
         });
-        jMenuBar1.add(jMenu10);
+        jMenu14.add(mnHelp);
+
+        jMenuBar1.add(jMenu14);
 
         setJMenuBar(jMenuBar1);
 
@@ -405,9 +424,9 @@ public class frmmain extends javax.swing.JFrame {
                     .addComponent(BtnNhapDiem3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1005, Short.MAX_VALUE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jDesktopPane1))
-                .addContainerGap(201, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -427,7 +446,7 @@ public class frmmain extends javax.swing.JFrame {
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jDesktopPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 615, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 35, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
@@ -447,19 +466,19 @@ public class frmmain extends javax.swing.JFrame {
         dshs.setVisible(true);
     }//GEN-LAST:event_mntcActionPerformed
 
-    private void QL_LopHocActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QL_LopHocActionPerformed
+    private void mnQLLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnQLLActionPerformed
         // TODO add your handling code here:
        frmQL_Lop lop = new frmQL_Lop();
         jDesktopPane1.add(lop);
         lop.setVisible(true);
-    }//GEN-LAST:event_QL_LopHocActionPerformed
+    }//GEN-LAST:event_mnQLLActionPerformed
 
-    private void mnldsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnldsActionPerformed
+    private void mnQLKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnQLKActionPerformed
         // TODO add your handling code here:
-        frmLapDSLop lds = new frmLapDSLop();
-        jDesktopPane1.add(lds);
-        lds.setVisible(true);
-    }//GEN-LAST:event_mnldsActionPerformed
+        frmQL_Khoi qlk = new frmQL_Khoi();
+        jDesktopPane1.add(qlk);
+        qlk.setVisible(true);
+    }//GEN-LAST:event_mnQLKActionPerformed
 
     private void mntkmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mntkmActionPerformed
         // TODO add your handling code here:
@@ -511,23 +530,37 @@ public class frmmain extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void QL_NamHocActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QL_NamHocActionPerformed
+    private void mnQLNHActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnQLNHActionPerformed
         // TODO add your handling code here:
         frmQL_NamHoc namhoc = new frmQL_NamHoc();
         jDesktopPane1.add(namhoc);
         namhoc.setVisible(true);
-    }//GEN-LAST:event_QL_NamHocActionPerformed
+    }//GEN-LAST:event_mnQLNHActionPerformed
 
     private void jMenu4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenu4ActionPerformed
 
-    private void jMenu10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu10ActionPerformed
+    private void mnHelpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnHelpActionPerformed
         // TODO add your handling code here:
         frmHelp he = new frmHelp();
         jDesktopPane1.add(he);
         he.setVisible(true);
-    }//GEN-LAST:event_jMenu10ActionPerformed
+    }//GEN-LAST:event_mnHelpActionPerformed
+
+    private void mnQLHKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnQLHKActionPerformed
+        // TODO add your handling code here:
+        frmQL_HocKy hk = new frmQL_HocKy();
+        jDesktopPane1.add(hk);
+        hk.setVisible(true);
+    }//GEN-LAST:event_mnQLHKActionPerformed
+
+    private void mnSXLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnSXLActionPerformed
+        // TODO add your handling code here:
+        frmSapLop sxl = new frmSapLop();
+        jDesktopPane1.add(sxl);
+        sxl.setVisible(true);
+    }//GEN-LAST:event_mnSXLActionPerformed
 
     /**
      * @param args the command line arguments
@@ -569,8 +602,6 @@ public class frmmain extends javax.swing.JFrame {
     private javax.swing.JButton BtnNhapDiem1;
     private javax.swing.JButton BtnNhapDiem2;
     private javax.swing.JButton BtnNhapDiem3;
-    private javax.swing.JMenuItem QL_LopHoc;
-    private javax.swing.JMenuItem QL_NamHoc;
     private javax.swing.JButton btnThemHS;
     private javax.swing.JButton jButton1;
     private javax.swing.JDesktopPane jDesktopPane1;
@@ -586,10 +617,10 @@ public class frmmain extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu10;
     private javax.swing.JMenu jMenu11;
     private javax.swing.JMenu jMenu12;
     private javax.swing.JMenu jMenu13;
+    private javax.swing.JMenu jMenu14;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
@@ -602,16 +633,20 @@ public class frmmain extends javax.swing.JFrame {
     private javax.swing.JMenuBar jMenuBar2;
     private javax.swing.JMenuBar jMenuBar3;
     private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem5;
-    private javax.swing.JMenuItem jMenuItem6;
+    private javax.swing.JMenuItem jMenuItem7;
     private javax.swing.JMenuItem jMenuItemThayDoiQuyDinh;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JToggleButton jToggleButton1;
-    private javax.swing.JMenuItem mnlds;
+    private javax.swing.JMenuItem mnHelp;
+    private javax.swing.JMenuItem mnQLHK;
+    private javax.swing.JMenuItem mnQLK;
+    private javax.swing.JMenuItem mnQLL;
+    private javax.swing.JMenuItem mnQLM;
+    private javax.swing.JMenuItem mnQLNH;
+    private javax.swing.JMenuItem mnSXL;
+    private javax.swing.JMenuItem mnTCD;
     private javax.swing.JMenuItem mnqd;
     private javax.swing.JMenuItem mntc;
     private javax.swing.JMenuItem mnths;
